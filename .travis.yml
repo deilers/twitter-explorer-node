@@ -4,12 +4,6 @@ node_js:
     - '12.0'
 servies:
     - docker
-before_script:
-    - npm i -g mocha
 script:
     - npm ci
     - npm test
-cache:
-    directories:
-        - ~/.npm
-        - node_modules
