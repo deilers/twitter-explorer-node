@@ -1,4 +1,4 @@
-import apiUtils from './utils.js';
+import apiUtils from './utils/utils.js';
 
 const app = apiUtils.initExpressApp();
 
@@ -16,3 +16,5 @@ app.get('/', (req, res) => {
         console.error(err);
     });
 });
+
+export default app;

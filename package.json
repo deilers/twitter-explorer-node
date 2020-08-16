@@ -5,7 +5,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon ./index.js"
+    "dev": "NODE_ENV=development nodemon ./index.js",
+    "test": "NODE_ENV=test mocha --exit test/app.test.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   }
 }
