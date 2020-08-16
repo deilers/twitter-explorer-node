@@ -10,7 +10,7 @@ import cors from 'cors';
  */
 function initExpressApp() {
 
-    const port = process.env.PORT || 8080;
+    const port = process.env.PORT || 3001;
 
     if (isDev()) {
         dotenv.config();
@@ -41,7 +41,8 @@ function createRequest() {
  * indicates if app is running in dev mode
  */
 function isDev() {
-    return process.env.NODE_ENV === 'development';
+    return process.env.NODE_ENV === 'development' ||
+           process.env.NODE_ENV === 'test';
 }
 
 /**
