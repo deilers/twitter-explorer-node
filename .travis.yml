@@ -9,3 +9,7 @@ before_script:
 script:
     - npm ci
     - npm test
+cache:
+    directories:
+        - ~/.npm
+        - node_modules
