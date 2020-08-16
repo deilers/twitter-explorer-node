@@ -1,0 +1,30 @@
+{
+  "name": "twitter-explorer-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deilers/twitter-explorer-node.git"
+  },
+  "author": "Devon Eilers (devon.d.eilers@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deilers/twitter-explorer-node/issues"
+  },
+  "homepage": "https://github.com/deilers/twitter-explorer-node#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
